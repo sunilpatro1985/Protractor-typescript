@@ -1,0 +1,29 @@
+{
+  "name": "example-typescript",
+  "version": "1.0.0",
+  "description": "a typescript example",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "pretest": "npm run tsc",
+    "webdriver-start": "webdriver-manager start",
+    "test": "protractor ConvertedJSfiles/conf.js"
+  },
+  "dependencies": {
+    "@types/jasmine": "^2.5.47",
+    "@types/jasminewd2": "^2.0.0",
+    "jasmine": "^2.4.1",
+    "protractor": "5.1.2",
+    "typescript": "~2.1.6"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.41",
+    "@types/jasmine": "^2.5.51",
+    "@types/jasminewd2": "^2.0.2",
+    "npm-run-all": "^4.0.2",
+    "ts-node": "^3.0.2"
+  },
+  "main": "index.js",
+  "keywords": []
+}

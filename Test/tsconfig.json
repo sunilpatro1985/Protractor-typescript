@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "outDir": "ConvertedJSfiles",
+     "types": ["jasmine", "node"]
+  },
+  "exclude": [
+    "node_modules",
+    "asyncAwait",
+    "plugins.ts"
+  ]
+}
