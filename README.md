@@ -1,7 +1,7 @@
 # Protractor-typescript
 Getting started with protractor in typescript
 
-Download visual studio code
+Download & install visual studio code (https://code.visualstudio.com/download)
 
 clone the project or create your own folder structure open VScode from **Test** folder
 
