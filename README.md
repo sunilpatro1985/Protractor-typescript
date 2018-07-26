@@ -15,7 +15,5 @@ and then type
 ```webdriver-manager start``` //This will activate selenium server with port 4444
 
 ---------------
-Then create another instance of terminal by clicking the **+** sign and then type
-```npm test```
-
-this will invoke chrome browser and validate the browser functionalities.
+Then create another instance of terminal by clicking the **+** sign and then type  
+```npm test``` //this will invoke chrome browser and validate the browser functionalities.
