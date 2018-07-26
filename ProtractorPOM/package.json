@@ -1,0 +1,23 @@
+{
+  "name": "protractordemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "pretest": "npm run tsc",
+    "test": "node_modules/protractor/bin/protractor outputjs/conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jasmine": "^2.8.8"
+  },
+  "devDependencies": {
+    "@types/node": "~10.5.2",
+    "jasmine": "3.1.0",
+    "protractor": "~5.3.2",
+    "typescript": "~2.9.2",
+    "log4js": "3.0.1"
+  }
+}

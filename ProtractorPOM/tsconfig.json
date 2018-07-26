@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+   
+    "target": "es5",                          
+    "module": "commonjs",                     
+    "sourceMap": true,                   
+    "strict": true,                          
+    "esModuleInterop": true ,                  
+    "outDir" : "outputjs",
+    "types" : ["jasmine", "node"]
+  },
+  "exclude": [
+    "node_modules/*"
+  ]
+}

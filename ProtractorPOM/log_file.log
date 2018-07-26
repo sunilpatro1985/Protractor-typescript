@@ -1,0 +1,11 @@
+[2018-07-25T22:52:16.843] [DEBUG] default - Customer added successfully with customer id :6
+[2018-07-25T22:52:22.513] [DEBUG] default - Dropdown option size 7
+[2018-07-25T22:52:22.542] [DEBUG] default - ---Customer Name---
+[2018-07-25T22:52:22.569] [DEBUG] default - Hermoine Granger
+[2018-07-25T22:52:22.593] [DEBUG] default - Harry Potter
+[2018-07-25T22:52:22.616] [DEBUG] default - Ron Weasly
+[2018-07-25T22:52:22.643] [DEBUG] default - Albus Dumbledore
+[2018-07-25T22:52:22.675] [DEBUG] default - Neville Longbottom
+[2018-07-25T22:52:22.701] [DEBUG] default - ABC XYZ
+[2018-07-25T22:52:22.702] [DEBUG] default - Item found on the list
+[2018-07-25T22:52:25.978] [DEBUG] default - Account created successfully with account Number :1016
