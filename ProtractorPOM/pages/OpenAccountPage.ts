@@ -1,21 +1,27 @@
 import { browser, element, by, protractor } from "protractor";
 import { log4jsconfig } from '../config/log4jsconfig';
 import {alert} from "../util/alert";
+//import * as prop from "/myfiles/Protractor/ProtractorDemo/testdata/prop.json";
 
 export class OpenAccountPage{
+    prop1 = require("../testdata/prop1");
+
     Customers = element(by.model('custId'));
     options = this.Customers.all(by.tagName('option'));
 
     Currency = element(by.model('currency')); //$ = by.css
     Process = element(by.buttonText("Process"));
+    //name = (<any>prop).customers.firstname + " " + (<any>prop).customers.lastname;
+    name = this.prop1.customers.firstname + " " + this.prop1.customers.lastname;
 
     SelectACustomer(){
+        let name = this.name;
         this.options.then(function(items){
             log4jsconfig.Log().debug("Dropdown option size " + items.length);
             for(let i=0 ; i < items.length ; i++){
                  items[i].getText().then(function(txt: any){
                      log4jsconfig.Log().debug(txt);
-                     if(txt == "ABC XYZ"){
+                     if(txt == name){
                          log4jsconfig.Log().debug("Item found on the list");
                          items[i].click();
                      }
