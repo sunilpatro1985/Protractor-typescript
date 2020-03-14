@@ -1,5 +1,5 @@
 module.exports = {
-    "siteurl" : "http://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager/addCust",
+    "siteurl" : "http://www.way2automation.com/angularjs-protractor/banking/#/manager/addCust",
     "customers" :{
         "firstname" : "John",
         "lastname" : "Carry",

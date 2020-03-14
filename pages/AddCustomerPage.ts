@@ -23,7 +23,7 @@ export class AddCustomerPage{
          this.postalcode.sendKeys(this.pcode);
 
          this.addcustomerbtn.click();
-         browser.sleep(3000);
+         browser.sleep(1000);
          alert.VerifyAndCloseAlert("Customer added");
      }
 

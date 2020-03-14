@@ -1,5 +1,5 @@
 import {Config, browser} from 'protractor';
-var screenreporter = require('util/screenreporter.js');
+//var screenreporter = require('util/screenreporter.js');
 
 export let config: Config = {
     framework : "jasmine2",
@@ -13,6 +13,7 @@ export let config: Config = {
 
     capabilities:{
         browserName : 'chrome',
+        chromeOptions: {'args': ['disable-infobars']},
         //browserName : 'firefox',
         //marionette : true,
         acceptSslCerts : true
@@ -36,7 +37,16 @@ export let config: Config = {
 
     onPrepare:()=>{
         var os = require('os');
-        //browser.manage().window().maximize();
-        browser.manage().timeouts().implicitlyWait(4000);    
+        let globals = require('protractor');
+        let browser = globals.browser;
+        browser.ignoreSynchronization = true;
+        browser.manage().window().maximize();
+        browser.manage().timeouts().implicitlyWait(5000);
+         // doing a browser.get will lead to a transpile error. 
+         // undefined does not have a get method
+       },
+       // You could set no globals to true to avoid jQuery '$' and protractor '$'
+       // collisions on the global namespace.
+       noGlobals: true
     }
-}
+

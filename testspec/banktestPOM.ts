@@ -20,7 +20,7 @@ describe("Banking project test", function(){
       let addcustpage = new AddCustomerPage();
 
       addcustpage.AddCustomer();
-      browser.sleep(3000);
+      browser.sleep(1000);
 
       new BasePage().ClickOnOpenAccTab();
 

@@ -6,10 +6,10 @@ import {alert} from "../util/alert";
 export class OpenAccountPage{
     prop1 = require("../testdata/prop1");
 
-    Customers = element(by.model('custId'));
+    Customers = element(by.id('userSelect'));
     options = this.Customers.all(by.tagName('option'));
 
-    Currency = element(by.model('currency')); //$ = by.css
+    Currency = element(by.id('currency')); //$ = by.css
     Process = element(by.buttonText("Process"));
     //name = (<any>prop).customers.firstname + " " + (<any>prop).customers.lastname;
     name = this.prop1.customers.firstname + " " + this.prop1.customers.lastname;
