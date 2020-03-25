@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "tsc",
     "pretest": "npm run tsc",
-    "test": "node_modules/protractor/bin/protractor outputjs/conf.js"
+    "test": "node_modules/.bin/protractor outputjs/conf.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,5 +1,5 @@
 import { browser, element, by, protractor, Browser } from "protractor";
-import { log4jsconfig } from '../config/log4jsconfig'
+//import { log4jsconfig } from '../config/log4jsconfig'
 import { AddCustomerPage } from "../pages/AddCustomerPage";
 import { BasePage } from "../pages/BasePage";
 import { OpenAccountPage } from "../pages/OpenAccountPage";
