@@ -1,5 +1,5 @@
 import { browser, element, by, protractor } from "protractor";
-import { log4jsconfig } from '../config/log4jsconfig';
+//import { log4jsconfig } from '../config/log4jsconfig';
 import {alert} from "../util/alert";
 //import * as prop from "/myfiles/Protractor/ProtractorDemo/testdata/prop.json";
 

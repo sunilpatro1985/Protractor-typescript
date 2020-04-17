@@ -1,7 +1,8 @@
 import { browser, element, by, protractor } from "protractor";
-import { log4jsconfig } from '../config/log4jsconfig';
+//import { log4jsconfig } from '../config/log4jsconfig';
 import {alert} from "../util/alert";
 //import * as prop from "/myfiles/Protractor/ProtractorDemo/testdata/prop.json";
+const log = require("../config/logging").default;
 
 export class OpenAccountPage{
     prop1 = require("../testdata/prop1");
@@ -16,13 +17,15 @@ export class OpenAccountPage{
 
     SelectACustomer(){
         let name = this.name;
+        log.debug(name);
         this.options.then(function(items){
-            log4jsconfig.Log().debug("Dropdown option size " + items.length);
+            //log4jsconfig.Log().debug("Dropdown option size " + items.length);
+            log.debug("Dropdown option size " + items.length);
             for(let i=0 ; i < items.length ; i++){
                  items[i].getText().then(function(txt: any){
-                     log4jsconfig.Log().debug(txt);
+                     log.debug(txt);
                      if(txt == name){
-                         log4jsconfig.Log().debug("Item found on the list");
+                         log.debug("Item found on the list");
                          items[i].click();
                      }
                  })

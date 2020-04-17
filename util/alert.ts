@@ -1,5 +1,6 @@
 import {protractor, browser} from 'protractor';
 import { log4jsconfig } from '../config/log4jsconfig'
+const log = require("../config/logging").default;
 
 export class alert{
 static VerifyAndCloseAlert(text: String){
@@ -10,7 +11,7 @@ static VerifyAndCloseAlert(text: String){
     let alertText = alert.getText();
 
     alertText.then(function(txt){
-        log4jsconfig.Log().debug(txt);
+        log.debug(txt);
     })
 
     browser.sleep(2000);
