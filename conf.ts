@@ -33,7 +33,8 @@ export let config: Config = {
  
     specs:['./testspec/banktestpom.js'],
 
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    //seleniumAddress: 'http://localhost:4444/wd/hub',
+    directConnect: true;
 
     onPrepare:()=>{
         var os = require('os');
