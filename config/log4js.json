@@ -11,6 +11,7 @@
         "filename": "log/log_file.log",
         "maxLogSize": 10240,
         "backups": 3,
+        "flag" : "w",
         "pattern":"%d %p %c %x{user} %m%n"
     }
     },

@@ -37,7 +37,7 @@ export class OpenAccountPage{
         this.Currency.$('[value="Dollar"]').click();
     }
 
-    ClickProcessBtn(){
+    ProcessIt(){
         this.Process.click();
         alert.VerifyAndCloseAlert("Account created");
     }
