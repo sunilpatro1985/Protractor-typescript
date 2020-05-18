@@ -7,7 +7,9 @@
     "strict": true,                          
     "esModuleInterop": true ,                  
     "outDir" : "outputjs",
-    "types" : ["jasmine", "node"]
+    "types" : ["jasmine", "node"],
+    "resolveJsonModule":true,
+    "moduleResolution": "node",
   },
   "exclude": [
     "node_modules/*"

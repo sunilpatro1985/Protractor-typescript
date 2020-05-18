@@ -1,4 +1,6 @@
 import {Config, browser} from 'protractor';
+let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+
 //var screenreporter = require('util/screenreporter.js');
 
 export let config: Config = {
@@ -31,10 +33,12 @@ export let config: Config = {
         //protractor conf.js bothtest
     },
  
-    specs:['./testspec/banktestpom.js'],
+    //specs:['./testspec/banktestpom.js'],
+    //    specs:['./specsDataReader/nestedDataSpec.js'],
+    specs:['./specs/TabOrderSpec.js'],
 
     //seleniumAddress: 'http://localhost:4444/wd/hub',
-    directConnect: true;
+    directConnect: true,
 
     onPrepare:()=>{
         var os = require('os');
@@ -45,6 +49,16 @@ export let config: Config = {
         browser.manage().timeouts().implicitlyWait(5000);
          // doing a browser.get will lead to a transpile error. 
          // undefined does not have a get method
+
+         jasmine.getEnv().addReporter(new SpecReporter({
+            spec: {
+              displayStacktrace: 'pretty'
+            },
+            summary: {
+              displayDuration: false
+            }
+          }));
+
        },
        // You could set no globals to true to avoid jQuery '$' and protractor '$'
        // collisions on the global namespace.
